@@ -33,6 +33,9 @@ The way around this is to use an interactive session that points to your compute
 12. If the above does not work an additional thing to try can be to install [Xming X Server for Windows](https://sourceforge.net/projects/xming), and then make sure it is running before you open mobaXterm, then follow the same process.
 
 # Using the python API in mentat
+
+**Warning** When trying to connect to mentat using the python `run as separeate process` on port 40007 it just hangs. I have not found a way around this so far.
+
 If you need to interface with mentat using py_post or py_mentat on the hpc there are a couple of additional steps to follow to get this working. The following steps assumes that the mentat module has already been loaded. If not, see point 8 above.
 1. First you need to load python:
 > `module load python/3.8.1`
