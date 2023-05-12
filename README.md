@@ -36,8 +36,10 @@ The way around this is to use an interactive session that points to your compute
 If you need to interface with mentat using py_post or py_mentat on the hpc there are a couple of additional steps to follow to get this working. The following steps assumes that the mentat module has already been loaded. If not, see point 8 above.
 1. First you need to load python:
 > `module load python/3.8.1`
-2. Then export the py_post and py_mentat library locations to `LD_LIBRARY_PATH` using:
+2. Then export the py_post and py_mentat library locations to `LD_LIBRARY_PATH` and `PYTHONPATH` using:
 > `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/apps2/MSC/mentat2021.4/shlib/linux64`
+
+> `export PYTHONPATH=$PYTHONPATH:/home/apps2/MSC/mentat2021.4/shlib/linux64`
 
 You should now be able to run python and import py_menat and py_post. You can check this by doing the following in the interactive session:
 
