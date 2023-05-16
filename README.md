@@ -6,7 +6,11 @@ A how-to guide for running mentat on the HPC.
 Mentat requires the GUI, even if running in background mode `-bg`. There are solutions to fake a display, but this does not work with mentat. As stated in the documentation 
 > Note that the DISPLAY environment variable must point to a valid display.
 
-The way around this is to use an interactive session that points to your computer's display. This does mean that you have to keep the ssh session open for the entire time that the interactive session is running.
+The way around this is to use an interactive session that points to your computer's display (X11 Forwarding). This does mean that you have to keep the ssh session open for the entire time that the interactive session is running.
+
+# Should you use mentat on the HPC?
+
+Probably not. X11 forwarding is slow, painfully slow. I ran some proc files on the HPC using the steps outlined below and it was 3 times SLOWER than my laptop. Make sure that there is a good reason to use mentat on the HPC, e.g. if the model you generate is far too big for your PC's RAM.
 
 # How to set this up?
 
