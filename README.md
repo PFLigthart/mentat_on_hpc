@@ -10,6 +10,8 @@ The way around this is to use an interactive session that points to your compute
 
 # How to set this up?
 
+**Note:** If you are not on campus you need to run the Citrix VPN before opening MobaXTerm.
+
 1. [MobaXTerm](https://mobaxterm.mobatek.net/download-home-edition.html) is the easiest way that I have found. So have that installed.
 2. When in MobaXterm, use the "+ Start local terminal option".
 3. Next you need to start a ssh session with X-Forwarding, this is done with the command below. Note, it will ask for your password.
